@@ -8,20 +8,17 @@ import styled from "styled-components";
 
 const Container = styled.div`
   grid-area: 4 / 1 / 5 / -1;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 `;
 
 class AboutParallax extends Component {
   render() {
     return (
       <React.Fragment>
-        <Parallax bgImage={Image1} strength={500}>
-          <div style={{ height: 300 }}>
-            <Container />
-          </div>
-        </Parallax>
+        <Container>
+          <Parallax bgImage={Image1} strength={500}>
+            <div style={{ height: 300 }} />
+          </Parallax>
+        </Container>
       </React.Fragment>
     );
   }
