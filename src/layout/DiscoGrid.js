@@ -45,8 +45,8 @@ const AlbumGridThree = styled.div`
 
 const ImageBox = styled.div`
   /* border: dashed 1px red; */
-  /* padding-top: 10px; */
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 `;
 
 const Button = styled.button`

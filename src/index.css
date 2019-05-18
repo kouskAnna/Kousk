@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "Holiday Home";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Holiday Home"),
+    url("./css/fonts/Holiday_Home.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Harrington";
+  src: local("Harrington"), url("./css/fonts/Harrington.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}

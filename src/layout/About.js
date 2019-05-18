@@ -5,6 +5,7 @@ import Image1 from "../images/about.jpg";
 // import media from "styled-media-query";
 import { purple } from "../utilities/Colors";
 import styled from "styled-components";
+import { Title } from "../elements";
 
 const Container = styled.div`
   grid-area: 4 / 1 / 5 / -1;
@@ -15,7 +16,7 @@ class AboutParallax extends Component {
     return (
       <React.Fragment>
         <Container>
-          <Parallax bgImage={Image1} strength={500}>
+          <Parallax bgImage={Image1} strength={1000}>
             <div style={{ height: 300 }} />
           </Parallax>
         </Container>
