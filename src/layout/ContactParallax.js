@@ -15,7 +15,7 @@ const Container = styled.div`
   display: grid;
   grid: 1fr / 1fr;
   background: black;
-  height: 500px;
+  height: 450px;
   /* border: dashed 1px red; */
 
   /* width: 300px; */
@@ -63,14 +63,14 @@ class Contact extends Component {
                 style={{ height: 100, width: 100 }}
               />
               <SocialIcon
-                url="https://www.instagram.com/kousk/"
+                url="https://www.facebook.com/kousk/"
                 network="facebook"
                 bgColor={purple}
                 fgColor="blue"
                 style={{ height: 100, width: 100 }}
               />
               <SocialIcon
-                url="https://www.instagram.com/kousk/"
+                url="https://www.soundcloud.com/kousk/"
                 network="soundcloud"
                 bgColor="blue"
                 fgColor={purple}
@@ -83,7 +83,7 @@ class Contact extends Component {
           </TitleAndIconContainer>
           <ParallaxContainer>
             <Parallax bgImage={Image1} strength={1000}>
-              <div style={{ height: 500 }} />
+              <div style={{ height: 450 }} />
             </Parallax>
           </ParallaxContainer>
         </Container>

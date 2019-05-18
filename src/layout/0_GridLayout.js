@@ -20,9 +20,9 @@ let Grid = styled.div`
 // column 3-4
 const DivideRow3 = styled.div`
   grid-area: 3 / 1 / 4 / -1;
+  background-color: black;
   /* border: dashed 1px red; */
   display: flex;
-  background-color: black;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
