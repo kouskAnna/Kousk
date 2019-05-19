@@ -41,7 +41,7 @@ const TitleAndIconContainer = styled.div`
 
 const IconFlex = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 
 const IconFlexChild = styled.div``;
@@ -67,7 +67,7 @@ class Contact extends Component {
                 network="facebook"
                 bgColor={purple}
                 fgColor="blue"
-                style={{ height: 100, width: 100 }}
+                style={{ height: 100, width: 100, paddingLeft: 20 }}
               />
               <SocialIcon
                 url="https://www.soundcloud.com/kousk/"

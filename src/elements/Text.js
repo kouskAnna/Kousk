@@ -44,11 +44,14 @@ export const VideoTitle = styled(Title)`
   padding-top: 170px;
   padding-right: 50px;
   color: #18003B;
-    text-shadow: 0px 0px 7px white;
+  text-shadow: 0px 0px 12px white;
 
 
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
+    font-size: 8em;
+  padding-right: 70px;
+
 
   `}
 
