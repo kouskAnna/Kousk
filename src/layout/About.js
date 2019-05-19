@@ -17,7 +17,7 @@ class AboutParallax extends Component {
       <React.Fragment>
         <Container>
           <Parallax bgImage={Image1} strength={1000}>
-            <div style={{ height: 300 }} />
+            <div style={{ height: 150 }} />
           </Parallax>
         </Container>
       </React.Fragment>

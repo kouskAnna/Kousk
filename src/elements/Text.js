@@ -75,12 +75,12 @@ export const AboutText = styled.p`
   line-height: 1.5;
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
-  font-size: 1em;
+  font-size: 1.3em;
   `}
 
   ${media.between("medium", "large")`
     /* screen width is between 768px (medium) and 1170px (large) */    /* text-align: center; */
-  font-size: 1.1em;
+  font-size: 1.5em;
 
   `}
 

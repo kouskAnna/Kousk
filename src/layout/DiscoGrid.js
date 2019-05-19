@@ -67,7 +67,7 @@ const Button = styled.button`
   }
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
-  width: 120px;
+  width: 150px;
   font-size: 20px;
 
   `}
