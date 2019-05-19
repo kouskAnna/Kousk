@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { purple } from "../utilities/Colors";
+import media from "styled-media-query";
 
 const DiscoGridContainer = styled.div`
   grid-area: 9 / 1 / 10 / -1;
@@ -56,7 +57,7 @@ const Button = styled.button`
   border-radius: 5px;
   border: 2px solid blue;
   color: white;
-  font-family: "Holiday Home";
+  font-family: "Harrington";
   font-size: 28px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -64,14 +65,31 @@ const Button = styled.button`
     background: ${purple};
     border: 2px solid blue;
   }
+  ${media.lessThan("medium")`
+    /* screen width is less than 768px (medium) */
+  width: 120px;
+  font-size: 20px;
+
+  `}
+
+  ${media.between("medium", "large")`
+    /* screen width is between 768px (medium) and 1170px (large) */
+
+  `}
+
+  ${media.greaterThan("large")`
+    /* screen width is greater than 1170px (large) */
+
+
+  `}
 `;
 
 export const Tag = styled.a`
   text-decoration: none;
   color: blue;
-  text-shadow: 1px 1px ${purple};
+  /* text-shadow: 1px 1px 5px white; */
   &:hover {
-    color: blue;
+    color: white;
   }
 `;
 

@@ -30,7 +30,7 @@ const ParallaxContainer = styled.div`
 const TitleAndIconContainer = styled.div`
   grid-area: 1 / 1 / -1 / -1;
   /* height: 100%; */
-  width: 500px;
+  width: 100%;
   align-self: center;
   justify-self: center;
   text-align: center;
