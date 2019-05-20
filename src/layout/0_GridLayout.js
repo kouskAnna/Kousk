@@ -17,34 +17,46 @@ let Grid = styled.div`
   grid-template: 100vh 300px 220px auto 360px auto 100px auto auto 200px 100px/ 1fr 1fr;
 `;
 
-// column 3-4
 const AboutTitleContainer = styled.div`
   grid-area: 3 / 1 / 4 / -1;
   background-color: black;
-  /* border: dashed 1px red; */
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
 `;
 
-// column 5
 const AboutContainer = styled.div`
   grid-area: 5 / 1 / 6 / -1;
   background-color: black;
   align-items: center;
 `;
 
-// column
 const DivideRow7 = styled.div`
   background-color: black;
   grid-area: 7 / 1 / 8 / -1;
 `;
 
-// column 11
 const DivideRow11 = styled.div`
   background-color: black;
   grid-area: 11 / 1 / 12 / -1;
+`;
+
+const ReleasesParallaxContainer = styled.div`
+  grid-area: 8 / 1 / 9 / -1;
+  display: grid;
+  grid: 1fr / 1fr;
+  background: black;
+  height: 300px;
+`;
+
+const ContactParallaxContainer = styled.div`
+  grid-area: 10 / 1 / 11 / -1;
+  margin-left: 0;
+  display: grid;
+  grid: 1fr / 1fr;
+  background: black;
+  height: 450px;
 `;
 
 export default class GridLayout extends Component {
@@ -53,7 +65,7 @@ export default class GridLayout extends Component {
       <Grid>
         <Video />
         <SoundCloudPlayer />
-        <AboutTitleContainer>
+        <AboutTitleContainer id="About">
           <Title>About</Title>
         </AboutTitleContainer>
         <AboutParallax />
@@ -70,9 +82,13 @@ export default class GridLayout extends Component {
         </AboutContainer>
         <PictureGallery />
         <DivideRow7 />
-        <ReleasesParallax />
+        <ReleasesParallaxContainer id="Releases">
+          <ReleasesParallax />
+        </ReleasesParallaxContainer>
         <DiscoGrid />
-        <ContactParallax />
+        <ContactParallaxContainer id="Contact">
+          <ContactParallax />
+        </ContactParallaxContainer>
         <DivideRow11 />
       </Grid>
     );
