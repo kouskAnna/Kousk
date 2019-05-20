@@ -101,6 +101,17 @@ export default class DiscoGrid extends Component {
           <ImageBox>
             <iframe
               style={{ border: 0, width: 350, height: 350 }}
+              src="https://bandcamp.com/EmbeddedPlayer/track=4225041714/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/"
+              seamless
+            >
+              <a href="http://kousk.bandcamp.com/track/esylus-moria-kousk-remix">
+                Esylus - Moria (Kousk Remix) by KousK
+              </a>
+            </iframe>
+          </ImageBox>
+          <ImageBox>
+            <iframe
+              style={{ border: 0, width: 350, height: 350 }}
               src="https://bandcamp.com/EmbeddedPlayer/track=3663964496/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/"
               seamless
             >
@@ -109,6 +120,9 @@ export default class DiscoGrid extends Component {
               </a>
             </iframe>
           </ImageBox>
+        </AlbumGrid>
+
+        <AlbumGridTwo>
           <ImageBox>
             <iframe
               style={{ border: 0, width: 350, height: 350 }}
@@ -120,9 +134,6 @@ export default class DiscoGrid extends Component {
               </a>
             </iframe>
           </ImageBox>
-        </AlbumGrid>
-
-        <AlbumGridTwo>
           <ImageBox>
             <iframe
               style={{ border: 0, width: 350, height: 350 }}
@@ -134,6 +145,8 @@ export default class DiscoGrid extends Component {
               </a>
             </iframe>
           </ImageBox>
+        </AlbumGridTwo>
+        <AlbumGridThree>
           <ImageBox>
             <iframe
               style={{ border: 0, width: 350, height: 350 }}
@@ -145,8 +158,6 @@ export default class DiscoGrid extends Component {
               </a>
             </iframe>
           </ImageBox>
-        </AlbumGridTwo>
-        <AlbumGridThree>
           <ImageBox>
             <iframe
               style={{ border: 0, width: 350, height: 350 }}
@@ -158,7 +169,7 @@ export default class DiscoGrid extends Component {
               </a>
             </iframe>
           </ImageBox>
-          <ImageBox>
+          {/* <ImageBox>
             <iframe
               style={{ border: 0, width: 350, height: 350 }}
               src="https://bandcamp.com/EmbeddedPlayer/track=2636650008/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
@@ -168,7 +179,7 @@ export default class DiscoGrid extends Component {
                 Nagual - Tzututa (Kousk Remix) by KousK
               </a>
             </iframe>{" "}
-          </ImageBox>
+          </ImageBox> */}
         </AlbumGridThree>
         <Button>
           <Tag href="https://kousk.bandcamp.com/music">Hear More</Tag>

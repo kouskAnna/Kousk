@@ -32,7 +32,7 @@ export default class Video extends Component {
           autoPlay
           loop
           muted
-          src="https://s3.us-east-2.amazonaws.com/kouskpublic/MoriaBackground.MOV"
+          src="https://s3.us-east-2.amazonaws.com/kouskpublic/MoriaBackground.mp4"
         />
       </VideoContainer>
     );
