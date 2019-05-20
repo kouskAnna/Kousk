@@ -20,20 +20,20 @@ let Header = styled.header`
   display: flex;
   flex-direction: horizontal;
   justify-content: flex-start;
-  border: dashed 2px purple;
+  /* border: dashed 2px purple; */
   height: 100px;
 `;
 
 const HeaderLogo = styled.div`
   width: 10%;
   /* height: 80%; */
-  border: dashed 2px yellow;
+  /* border: dashed 2px yellow; */
 `;
 
 const HeaderTitle = styled(HeaderLogo)`
   /* border: dashed 2px purple; */
   width: 90%;
-  border: dashed 2px green;
+  /* border: dashed 2px green; */
 `;
 
 const NavListContainer = styled.div`
