@@ -8,6 +8,7 @@
     "react-grid-gallery": "^0.5.4",
     "react-parallax": "^2.2.0",
     "react-scripts": "3.0.1",
+    "react-scrollspy-nav": "^1.2.1",
     "react-social-icons": "^4.1.0",
     "styled-components": "^4.2.0",
     "styled-components-grid": "^2.2.2",
