@@ -87,9 +87,9 @@ const NavItemTitle = styled.p`
     /* screen width is less than 768px (medium) */
   font-size: 1.1rem
   margin-right: 20px;
-  &:hover {
+  /* &:hover {
     text-shadow: 4px 4px purple;
-  }
+  } */
 
   `}
 
