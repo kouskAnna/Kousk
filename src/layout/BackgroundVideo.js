@@ -3,6 +3,7 @@ import styled from "styled-components";
 import media from "styled-media-query";
 import { VideoTitle } from "../elements";
 import ScrollspyNav from "react-scrollspy-nav";
+import Logo from "../images/logo.png";
 
 const VideoContainer = styled.div`
   grid-area: 1 / 1 / 2 / -1;
@@ -20,8 +21,22 @@ let Header = styled.header`
   display: flex;
   flex-direction: horizontal;
   justify-content: flex-start;
-  /* border: dashed 2px purple; */
   height: 100px;
+`;
+
+let HeaderLogoImage = styled.div`
+  /* border: dashed 2px purple; */
+  background: ${props => `url(${Logo})`};
+
+  background-position: left;
+  margin-left: 10px;
+  background-size: 70px 70px;
+
+  background-repeat: no-repeat;
+
+  height: 100%;
+
+  width: 100%;
 `;
 
 const HeaderLogo = styled.div`
@@ -62,21 +77,25 @@ const NavListContainer = styled.div`
   `}
 `;
 
-const NavItemTitle = styled.span`
+const NavItemTitle = styled.p`
   font-family: "Harrington";
   font-size: 2em;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 60px;
+
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
   font-size: 1.1rem
-  margin-right: 10px;
-
+  margin-right: 20px;
+  &:hover {
+    text-shadow: 4px 4px purple;
+  }
 
   `}
 
   ${media.between("medium", "large")`
     /* screen width is between 768px (medium) and 1170px (large) */
+    margin-right: 40px;
 
   `}
 
@@ -99,12 +118,27 @@ let StyledVideo = styled.video`
   object-fit: cover;
 `;
 
+const textShadow = {
+  hover: {
+    textShadow: "1px 1px 1px black"
+  }
+};
+
+const Link = styled.a`
+  text-decoration: none;
+  &:hover {
+    text-shadow: 1px 1px 3px purple;
+  }
+`;
+
 export default class Video extends Component {
   render() {
     return (
       <VideoContainer>
         <Header>
-          <HeaderLogo />
+          <HeaderLogoImage>
+            <HeaderLogo />
+          </HeaderLogoImage>
           <HeaderTitle>
             <ScrollspyNav
               scrollTargetIds={["About", "Releases", "Contact"]}
@@ -113,24 +147,24 @@ export default class Video extends Component {
             >
               <NavListContainer>
                 <li>
-                  <a href="/">
-                    <NavItemTitle>Home</NavItemTitle>
-                  </a>
+                  <Link href="/">
+                    <NavItemTitle style={textShadow}>Home</NavItemTitle>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#About">
+                  <Link href="#About">
                     <NavItemTitle>About</NavItemTitle>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#Releases">
+                  <Link href="#Releases">
                     <NavItemTitle>Releases</NavItemTitle>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#Contact">
+                  <Link href="#Contact">
                     <NavItemTitle>Contact</NavItemTitle>
-                  </a>
+                  </Link>
                 </li>
               </NavListContainer>
             </ScrollspyNav>
