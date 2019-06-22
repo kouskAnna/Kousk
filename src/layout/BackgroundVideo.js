@@ -79,23 +79,28 @@ const NavListContainer = styled.div`
 
 const NavItemTitle = styled.p`
   font-family: "Harrington";
-  font-size: 2em;
+  font-size: 2.5em;
   text-decoration: none;
   margin-right: 60px;
+  color: white;
+  font-weight: bold;
+  /* letter-spacing: 2px; */
+  text-shadow: 2px 2px 8px black;
+  &:hover {
+    text-shadow: 4px 4px 8px turquoise;
+  }
 
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
   font-size: 1.1rem
   margin-right: 20px;
-  /* &:hover {
-    text-shadow: 4px 4px purple;
-  } */
 
   `}
 
   ${media.between("medium", "large")`
     /* screen width is between 768px (medium) and 1170px (large) */
     margin-right: 40px;
+    font-size: 1.5rem
 
   `}
 
@@ -177,7 +182,7 @@ export default class Video extends Component {
           autoPlay
           loop
           muted
-          src="https://s3.us-east-2.amazonaws.com/kouskpublic/MoriaBackground.mp4"
+          src="https://kouskpublic.s3.us-east-2.amazonaws.com/AvatarCode.MOV"
         />
       </VideoContainer>
     );

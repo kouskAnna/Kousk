@@ -39,12 +39,13 @@ export const ContactTitle = styled(Title)`
 `;
 
 export const VideoTitle = styled(Title)`
-  font-size: 10em;
+  font-size: 12em;
+  letter-spacing: 10px;
   text-align: center;
   padding-top: 170px;
-  padding-right: 50px;
-  color: #18003B;
-  text-shadow: 0px 0px 12px white;
+  padding-right: 5px;
+  color: white;
+  text-shadow: 0px 0px 15px #18003B;
 
 
   ${media.lessThan("medium")`

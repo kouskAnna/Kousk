@@ -14,6 +14,7 @@ import Image7 from "../images/overShoulder.jpg";
 const ImageContainer = styled.div`
   grid-area: 6 / 1 / 7 / -1;
   background: black;
+  /* display: flex; */
 `;
 
 const IMAGES = [
@@ -69,7 +70,7 @@ export default class PictureGallery extends Component {
   render() {
     return (
       <ImageContainer>
-        <Gallery images={IMAGES} />;
+        <Gallery images={IMAGES} maxRows="4" />;
       </ImageContainer>
     );
   }
