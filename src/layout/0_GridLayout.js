@@ -71,13 +71,13 @@ export default class GridLayout extends Component {
         <AboutParallax />
         <AboutContainer>
           <AboutText>
-            Kousk is a producer born on the west coast of BC who finds her
-            creative inspiration on adventures deep in the rainforest. She
-            started learning classical piano when she was 5 and discovered her
-            passion for electronic music production when she moved back home
-            from living abroad in the Philippines. As she expresses experiences,
+            Kousk is a producer born on the West Coast of BC who finds her
+            creative inspiration on adventures in the rainforest. She started
+            learning classical piano when she was 5 and discovered her passion
+            for electronic music production when she moved back to Canada from
+            the Philippines after high school. As she expresses experiences,
             ideas and feelings into music, she plays with synchronized movement
-            and growth through sound.
+            and growth through sound
           </AboutText>
         </AboutContainer>
         <PictureGallery />

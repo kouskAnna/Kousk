@@ -152,11 +152,6 @@ export default class Video extends Component {
             >
               <NavListContainer>
                 <li>
-                  <Link href="/">
-                    <NavItemTitle style={textShadow}>Home</NavItemTitle>
-                  </Link>
-                </li>
-                <li>
                   <Link href="#About">
                     <NavItemTitle>About</NavItemTitle>
                   </Link>

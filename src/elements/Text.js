@@ -50,7 +50,7 @@ export const VideoTitle = styled(Title)`
 
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
-    font-size: 8em;
+    font-size: 7em;
   padding-right: 70px;
 
 
