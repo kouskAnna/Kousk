@@ -92,7 +92,7 @@ const NavItemTitle = styled.p`
 
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
-  font-size: 1.1rem
+  font-size: 1rem
   margin-right: 20px;
 
   `}
